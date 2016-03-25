@@ -10,6 +10,7 @@
   "repository": "https://github.com/kenahrens/nr-utils",
   "license": "MIT",
   "dependencies": {
+    "hapi": "^13.2.2",
     "koa": "^1.2.0",
     "newrelic": "^1.26.0",
     "request": "^2.69.0"
