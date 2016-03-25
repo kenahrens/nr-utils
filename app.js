@@ -1,3 +1,4 @@
+var newrelic = require('newrelic');
 var koa = require('koa');
 var app = koa();
 
@@ -10,7 +11,7 @@ app.use(function *(next) {
 });
 
 // Logger
-app.use(function *(next)) {
+app.use(function *(next) {
   var start = new Date;
   yield next;
   var ms = new Date - start;
